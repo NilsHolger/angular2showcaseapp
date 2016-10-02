@@ -1,0 +1,72 @@
+<div app-scroll>
+  <div id="wrapper">
+    <header>
+      <div class="website-header">
+        <div class="row">
+          <h1>Angular 2 Showcase</h1>
+          <nav>
+            <a href="https://github.com/yearofmoo-articles/AngularJS-Second-Animation-Article" target="_blank" rel="nofollow" class="btn info medium">
+              <i class="icon-github icon-left"></i> View Github Repo NG1
+            </a>
+            <a href="http://www.yearofmoo.com/2013/05/enhanced-animations-in-angularjs.html" target="_blank" rel="nofollow" class="btn library medium">
+              <i class="icon-cloud icon-left"></i> View Article
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="navbar nav1 website-nav">
+        <nav class="row">
+          <form class="search-website-form field">
+            <input type="search" placeholder="Search Github..." class="search input"  (click)="search('github')" />
+          </form>
+          <ul class="toggles">
+            <li>
+              <a routerLink="/dashboard/all">Dashboard</a>
+            </li>
+            <li>
+              <a routerLink="/apps">All Apps</a>
+            </li>
+            <li>
+              <a routerLink="/dashboard/opensource">Open Source</a>
+            </li>
+            <li>
+              <a routerLink="/dashboard/onlygoogle">Only Google</a>
+            </li>
+            <li>
+              <a routerLink="/dashboard/games">Games</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="navbar alternative-nav">
+        <div class="row aligned-inline-form">
+          <div class="col ani">
+            <span class="medium btn library">
+              Animation Library <i class="icon-right-open"></i>
+            </span>
+          </div>
+          <div class="col ani">
+            <div ng-click="library='greensock'" class="medium default btn" ng-class="{info:library=='greensock'}">
+              Greensock.js
+            </div>
+          </div>
+          <div class="col ani">
+            <div ng-click="library='animatecss'" class="medium default btn" ng-class="{info:library=='animatecss'}">
+              Animate.css
+            </div>
+          </div>
+          <div class="col ani">
+            <div ng-click="library='custom'" class="medium default btn" ng-class="{info:library=='custom'}">
+              Custom CSS3 Keyframes
+            </div>
+          </div>
+          <div class="col ani">
+            <div ng-click="library=''" class="medium default btn" ng-class="{info:library==''}">
+              No Animation
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>

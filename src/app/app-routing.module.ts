@@ -1,11 +1,29 @@
-import { NgModule } from '@angular/core';
+import { ModuleWithProviders  } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { BodyComponent } from './body/body.component';
+import { BodyDetailComponent } from './bodydetail/bodydetail.component';
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-  providers: []
-})
-export class Angular2showcaseRoutingModule { }
+const appRoutes: Routes = [
+  {
+    path: 'dashboard/:name',
+    component: DashboardComponent
+
+  },
+  {
+    path: 'apps',
+    component: BodyComponent
+  },
+  {
+    path: 'detail/:name',
+    component: BodyDetailComponent
+  },
+  {
+    path: '',
+    redirectTo: '/dashboard/all',
+    pathMatch: 'full'
+  }
+];
+
+export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

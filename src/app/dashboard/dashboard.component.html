@@ -1,0 +1,17 @@
+
+<div class="results">
+  <div app-focus="getFocusAnimation()"  *ngFor="let app of apps" class="result" ng-animate="getListAnimation()">
+      <div>
+        <button class="small btn library" (click)="gotoDetail(app)">View Details</button>
+      </div>
+    <div class="inner"> 
+      <h5>{{ app.name }}</h5>
+      <img src="http://builtwith.angularjs.org/projects/{{ app.thumb }}" />
+    </div>
+  </div>
+  <div *ngIf="limit < totalResults" class="load-more-results bottom">
+    <a href="" (click)="more()" class="medium default btn">
+      Load More Results
+    </a>
+  </div>
+</div>
