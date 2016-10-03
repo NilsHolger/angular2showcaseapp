@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   background:white;
+  position: relative;
 }
 .search-website-form {
   float:right;
@@ -185,4 +186,15 @@ footer .yearofmoo {
   color:white;
   text-align:left;
   font-size:20px;
+}
+
+.overlay{
+  position: fixed;
+  top: 54%;
+  left: 64%;
+  width: 20%;
+  height: 100%;
+  z-index: 10;
+  color: white;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
 }
