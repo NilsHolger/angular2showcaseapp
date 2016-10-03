@@ -12,6 +12,8 @@ import { AppSearchService } from './appsearchservice.service';
 import { WikipediaSearchService } from './wikipediaservice.service';
 import { routing } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ImageComponent } from './image/image.component';
+import { ImagePreviewComponent } from './image/image.preview.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeaderComponent,
     DashboardComponent,
     BodyComponent,
-    BodyDetailComponent 
+    BodyDetailComponent,
+    ImageComponent,
+    ImagePreviewComponent
   ],
   imports: [
     BrowserModule,
