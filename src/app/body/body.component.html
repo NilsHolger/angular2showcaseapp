@@ -1,13 +1,12 @@
-<ul class="heroes">
-  <li *ngFor="let app of apps" [class.selected]="app === selectedApp" (click)="onSelect(app)">
+<div *ngIf="selectedApp">
+  <h2>{{selectedApp.name | uppercase }} is the selected App!</h2>
+  <div><label>Submitter: </label>{{selectedApp.submitter}} is the Hero Developer!</div>
+  <div>
+    <button class="medium btn library" (click)="gotoDetail()">View Details</button>
+  </div>
+</div>
+<ul class="heroes" [@flyInOut]="'in'">
+  <li *ngFor="let app of apps" [@appState]="state" [class.selected]="app === selectedApp" (click)="onSelect(app)">
     <span class="badge">{{app.name}}</span> {{app.submitter}}
   </li>
 </ul>
-
-    <div *ngIf="selectedApp">
-      <h2>{{selectedApp.name | uppercase }} is the selected App!</h2>
-      <div><label>submitter: </label>{{selectedApp.submitter}}</div>
-      <div>
-        <button class="medium btn library" (click)="gotoDetail()">View Details</button>
-      </div>
-    </div>
