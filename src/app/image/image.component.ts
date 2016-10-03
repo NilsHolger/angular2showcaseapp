@@ -1,5 +1,5 @@
 import {Component, HostBinding} from '@angular/core';
-import {default as routerAnimations} from './route.animations';
+import {default as routerAnimations} from './../route.animations';
 
 @Component({
     selector: 'demo_2',

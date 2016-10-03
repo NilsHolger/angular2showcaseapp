@@ -5,6 +5,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { BodyComponent } from './body/body.component';
 import { BodyDetailComponent } from './bodydetail/bodydetail.component';
 import { ImageComponent } from './image/image.component';
+import { PlayComponent } from './play/play.component';
+import { TechnologyComponent } from './technology/technology.component';
 
 const appRoutes: Routes = [
   {
@@ -19,6 +21,14 @@ const appRoutes: Routes = [
   {
     path: 'apps',
     component: BodyComponent
+  },
+  {
+    path: 'play',
+    component: PlayComponent
+  },
+  {
+    path: 'technologies',
+    component: TechnologyComponent
   },
   {
     path: 'detail/:name',

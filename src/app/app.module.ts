@@ -14,6 +14,8 @@ import { routing } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ImageComponent } from './image/image.component';
 import { ImagePreviewComponent } from './image/image.preview.component';
+import { PlayComponent } from './play/play.component';
+import { TechnologyComponent } from './technology/technology.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { ImagePreviewComponent } from './image/image.preview.component';
     BodyComponent,
     BodyDetailComponent,
     ImageComponent,
-    ImagePreviewComponent
+    ImagePreviewComponent,
+    PlayComponent,
+    TechnologyComponent
   ],
   imports: [
     BrowserModule,

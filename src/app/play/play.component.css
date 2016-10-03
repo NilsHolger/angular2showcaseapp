@@ -1,0 +1,32 @@
+    :host {
+        background:url(./app/play/bg.jpg) no-repeat center center / cover;
+         cursor:pointer;
+         position:fixed;
+         top:0;
+         left:0;
+         height:100%;
+         right:0;
+         display:block;
+         /*margin-top: 130px;*/
+      }
+      :host(.alterative-nav) {
+  display:none !important;
+}
+
+      .stage {
+        position: relative;
+        display: block;
+        height: 800px;
+      }
+      .box {
+        height:200px;
+        width:200px;
+        background:url(./app/play/logo.svg) no-repeat center center / cover;
+        background-color:rgba(0,0,0,0.4);
+        display:block;
+        position: absolute;
+        border-radius:50px;
+        border:10px solid rgba(0,0,0,0.6);
+        /*Todo render in the middle */
+        margin-top:130px;
+      }
