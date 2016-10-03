@@ -1,0 +1,17 @@
+.overlay {
+    position:absolute;
+    z-index: 10;
+    color:white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/*.overlay{
+  position: fixed;
+  top: 54%;
+  left: 64%;
+  width: 20%;
+  height: 100%;
+  z-index: 10;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+}*/

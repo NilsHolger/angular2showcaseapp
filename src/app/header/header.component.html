@@ -19,13 +19,7 @@
           <form class="search-website-form field">
             <input type="search" placeholder="Search Wikipedia..." class="search input" #term (keyup)="search(term.value)" />
             <!--TODO overlay needs some CSS work to render properly-->
-            <!--<div class="overlay">
-              <ul>
-                <li *ngFor="let item of items | async">
-                  {{item}}
-                </li>
-              </ul>
-            </div>-->
+
           </form>
           <ul class="toggles">
             <li>
@@ -44,6 +38,13 @@
               <a routerLink="/technologies">Technologies</a>
             </li>
           </ul>
+          <div class="overlay">
+            <ul>
+              <li *ngFor="let item of items | async">
+                {{item}}
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
       <div class="navbar alternative-nav">
@@ -60,6 +61,7 @@
           </div>
         </div>
       </div>
+
     </header>
   </div>
 </div>
