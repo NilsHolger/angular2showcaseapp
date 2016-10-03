@@ -1,6 +1,6 @@
 
 <div class="results">
-  <div app-focus="getFocusAnimation()"  *ngFor="let app of apps" class="result" ng-animate="getListAnimation()">
+  <div app-focus="getFocusAnimation()"  *ngFor="let app of apps" [@appState]="app.state" (click)="app.toggleState()" class="result" ng-animate="getListAnimation()">
       <div>
         <button class="small btn library" (click)="gotoDetail(app)">View Details</button>
       </div>

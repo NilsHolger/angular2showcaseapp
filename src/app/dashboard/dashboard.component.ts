@@ -1,4 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import {   
+  Component,
+  OnInit,
+  trigger,
+  state,
+  style,
+  transition,
+  animate
+} from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { App } from '../app';
 import { AppSearchService } from '../appsearchservice.service';
@@ -6,14 +14,34 @@ import { AppSearchService } from '../appsearchservice.service';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  styleUrls: ['./dashboard.component.css'],
+  animations: [
+      trigger('appState', [
+        state('inactive', style({
+          backgroundColor: '#eee',
+          transform: 'scale(1)'
+        })),
+        state('active', style({
+          backgroundColor:'#cfd8dc',
+          transform: 'scale(1.2)'
+        })),
+        transition('inactive => active', animate('100ms ease-in')),
+        transition('active => inactive', animate('100ms ease-out'))
+      ])
+  ]
 })
 export class DashboardComponent implements OnInit {
 
   apps: App[] = [];
+    toggleState() {
+    this.state = (this.state === 'active' ? 'inactive' : 'active');
+  }
 
 
-  constructor(private appSearchService: AppSearchService, private router: Router, private route: ActivatedRoute) { }
+  constructor(private appSearchService: AppSearchService,
+              private router: Router,
+              private route: ActivatedRoute,
+              public state = 'inactive') { }
 
   ngOnInit(): void {
     this.route.params.forEach((params: Params) => {
