@@ -2,16 +2,13 @@
     position:absolute;
     z-index: 10;
     color:white;
+    right: 15%;
+    width: 290px;
     background-color: rgba(0,0,0,0.5);
 }
 
-/*.overlay{
-  position: fixed;
-  top: 54%;
-  left: 64%;
-  width: 20%;
-  height: 100%;
-  z-index: 10;
-  color: white;
-  background-color: rgba(0,0,0,0.5);
-}*/
+.overlayli {
+    padding: 1px 1px 1px 33px;
+    display:block;
+}
+ .overlayli:hover {background: #555555; width:290px;}
