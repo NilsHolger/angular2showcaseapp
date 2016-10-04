@@ -1,0 +1,5 @@
+<nav class="navigation">
+  <button (click)="$event.stopPropagation(); showModal=true">Show Angular 2</button>
+</nav>
+
+<modal *ngIf="showModal" (close)="showModal=false"></modal>

@@ -16,6 +16,7 @@ import { ImageComponent } from './image/image.component';
 import { ImagePreviewComponent } from './image/image.preview.component';
 import { PlayComponent } from './play/play.component';
 import { TechnologyComponent } from './technology/technology.component';
+import { TechnologymasterComponent } from './technology/technologymaster.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { TechnologyComponent } from './technology/technology.component';
     ImageComponent,
     ImagePreviewComponent,
     PlayComponent,
-    TechnologyComponent
+    TechnologyComponent,
+    TechnologymasterComponent
   ],
   imports: [
     BrowserModule,

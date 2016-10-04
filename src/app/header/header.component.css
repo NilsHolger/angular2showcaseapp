@@ -4,11 +4,11 @@
     color:white;
     right: 15%;
     width: 290px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.3);
 }
 
 .overlayli {
     padding: 1px 1px 1px 33px;
     display:block;
 }
- .overlayli:hover {background: #555555; width:290px;}
+ .overlayli:hover {background: rgba(0,0,0,0.5); width:290px;}
