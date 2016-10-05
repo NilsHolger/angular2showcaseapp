@@ -49,3 +49,12 @@
     padding:20px;
     background:black;
 }
+
+demo_1, demo_2, demo_3, demo_4 {
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    right:0;
+    display:block;
+}
